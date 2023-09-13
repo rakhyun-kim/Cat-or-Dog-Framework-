@@ -41,7 +41,7 @@ class AnimalModel : ObservableObject {
                             
                             DispatchQueue.main.async {
                                 
-                                while animal.imageData == nil {}
+                                while animal.results.isEmpty {}
                                 self.animal = animal
                             }
                         }
